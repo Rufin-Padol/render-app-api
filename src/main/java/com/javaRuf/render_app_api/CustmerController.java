@@ -19,9 +19,17 @@ public class CustmerController {
             new Custumer(5L, "Joe", "Davis", "email5@example.com")
     );
 
+    private static  final  Custumer  CUSTOMER = new Custumer(5L, "Joe", "Davis", "email5@example.com");
+
     // Méthode pour récupérer tous les clients
     @GetMapping
     public List<Custumer> findAllCustomers() {
         return CUSTOMERS;
+    }
+
+
+    @GetMapping("oneCustomer")
+    public Custumer findCustomers() {
+        return CUSTOMER;
     }
 }
