@@ -28,7 +28,7 @@ public class CustmerController {
     }
 
 
-    @GetMapping("oneCustomer")
+    @GetMapping("/oneCustomer")
     public Custumer findCustomers() {
         return CUSTOMER;
     }
